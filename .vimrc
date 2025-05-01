@@ -1,0 +1,21 @@
+colorscheme slate
+syntax on
+
+set number
+set relativenumber
+set nowrap
+set noswapfile
+set showmatch
+set mouse=a
+set tabstop=3
+set shiftwidth=3
+set expandtab
+set autoindent
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set wildmenu
+set wildmode=longest:full,full
+set splitbelow
+set splitright
