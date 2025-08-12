@@ -1,4 +1,3 @@
-colorscheme slate
 syntax on
 
 set termguicolors
@@ -70,44 +69,33 @@ hi Search       guibg=#005500 guifg=#00ff00 ctermfg=green ctermbg=black
 hi StatusLineNC guifg=#004400 guibg=#000000 ctermfg=darkgreen ctermbg=black
 
 " Set <Space> as leader
-let mapleader=" "
-let maplocalleader=" "
+"let mapleader=" "
+"let maplocalleader=" "
 
 " ===== NORMAL MODE =====
-nnoremap <leader>Y maggVGy`a
-nnoremap <leader>s :setlocal spell!<CR>
-nnoremap Y y$
-nnoremap <BS> ^
-nnoremap gb :bnext<CR>
-nnoremap gB :bprevious<CR>
-nnoremap <Esc> :set nohlsearch<CR>
-nnoremap x "_x
-nnoremap <leader>rr :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
-nnoremap <leader>rw :%s/\s\+$//e<CR>
-nnoremap <leader>xx :!chmod +x %<CR>
-
-" Quickfix
-nnoremap <leader>qo :copen<CR>
-nnoremap <leader>qc :cclose<CR>
-nnoremap <leader>qf :cfirst<CR>
-nnoremap <leader>ql :clast<CR>
-nnoremap <leader>qn :cnext<CR>
-nnoremap <leader>qp :cprev<CR>
+"nnoremap Y y$
+"nnoremap <BS> ^
+"nnoremap ]b :bnext<CR>
+"nnoremap [b :bprevious<CR>
+"nnoremap <Esc> :set nohlsearch<CR>
+"nnoremap x "_x
+"nnoremap <leader>rr :%s/\<<C-r><C-w>\>//gI<Left><Left><Left>
+"nnoremap <leader>rw :%s/\s\+$//e<CR>
 
 " Window management
-nnoremap <A-=> <C-w>=
-nnoremap <A-m> <C-w>|
-nnoremap <leader>dt :diffthis<CR>
-nnoremap <leader>th <C-w>t<C-w>K
-nnoremap <leader>tv <C-w>t<C-w>H
+"nnoremap <A-=> <C-w>=
+"nnoremap <A-m> <C-w>|
+"nnoremap <leader>dt :diffthis<CR>
+"nnoremap <leader>th <C-w>t<C-w>K
+"nnoremap <leader>tv <C-w>t<C-w>H
 
 " ===== VISUAL MODE =====
-vnoremap < <gv
-vnoremap > >gv
-vnoremap <leader>d "_d
+"vnoremap < <gv
+"vnoremap > >gv
+"vnoremap <leader>d "_d
 
 " ===== INSERT MODE =====
-inoremap <C-c> <Esc>
+"inoremap <C-c> <Esc>
 
 " ===== VISUAL BLOCK MODE =====
-xnoremap <leader>p "_dP
+"xnoremap <leader>p "_dP
